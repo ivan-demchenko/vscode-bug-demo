@@ -1,0 +1,31 @@
+{
+  "name": "bug-demo-ext",
+  "displayName": "bug demo ext",
+  "description": "this is a test ext",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bug-demo-ext.helloWorld",
+        "title": "Hello World (root)"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.83.0",
+    "@types/node": "18.x",
+    "typescript": "^5.2.2"
+  }
+}

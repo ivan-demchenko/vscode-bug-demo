@@ -1,0 +1,22 @@
+{
+  "name": "bug-demo-ext",
+  "displayName": "bug demo ext (env)",
+  "description": "this is a test ext",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "../out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bug-demo-ext.helloWorld",
+        "title": "Hello World (env)"
+      }
+    ]
+  }
+}
